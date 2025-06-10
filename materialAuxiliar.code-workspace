@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "materialAuxiliar",
+			"path": "../../../../Downloads/materialAuxiliar"
+		},
+		{
+			"name": "ArtMuseun",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "ArtMuseun",
+		"liveServer.settings.port": 5501
+	}
+}
