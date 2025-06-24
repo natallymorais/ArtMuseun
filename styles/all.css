@@ -1,10 +1,11 @@
-*{
+
+* {
     margin: 0%;
     padding: 0%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-header{
+header, footer {
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -13,25 +14,38 @@ header{
     background-color: #2A2B2A;
     color: white;
 }
-ul{
+#menu{
+    width: 30px;
+    height: 30px;
+    border: solid 2px white;
+    background-color: #2A2B2A;
+    border-radius: 0%;
+}
+ul {
     display: flex;
     gap: 20px;
     list-style: none;
 }
 
-h2{
-    padding: 20px;
+h2 {
+    font-weight: bold;
+    padding: 10px;
     text-align: center;
-    border-left-style: solid #F5124B;
+    
 }
 
-main{
+#ds{
+    width: 650px;
+    border: #F5124B;
+    border-style: none none solid none;
+}
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-section{
+section {
     padding-top: 20px;
     width: 100%;
     display: flex;
@@ -39,30 +53,95 @@ section{
     justify-content: center;
     align-items: center;
 }
-#banner{
+
+#banner {
+    margin-top: 40px;
     align-items: center;
     display: flex;
     flex-direction: column;
     width: 800px;
     height: 1050px;
-    border: solid 1px #2A2B2A;
+    border: solid 1px #b59a71;
+    border-radius:10px;
 }
 
-#banner img{
+#banner img {
     justify-content: center;
     width: 750px;
     height: 800px;
 }
-
-#banner p{
-    padding: 40px;
+#banner h2{
+    padding: 20px;
 }
-button{
+#banner p {
+    padding: 40px;
+    text-align: center;
+    color: #b59a71;
+}
+
+button {
     width: 100px;
     height: 30px;
     border: none;
     color: white;
     background-color: #F5124B;
     border-radius: 5px;
+    font-weight: bold;
 }
 
+#sobre{
+    width: 800px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+#artes{
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.artes{
+    width: 200px;
+    height: 250px;
+    margin: 5px;
+    border: solid 1px #b59a71;
+    border-radius:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.artes img{
+    width: 170px;
+    height: 100px;
+}
+
+.artes p{
+    margin: 20px;
+    color: #b59a71;
+}
+
+footer{
+    margin-top: 40px;
+}
+
+#navMobile{
+    display: none;
+}
+@media screen and ( max-width: 800px ){
+    
+    #navMobile{
+        display: flex;
+        background-color: black;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        bottom: 0%;
+    }
+    #navPc{
+        display: none;
+    }
+}
