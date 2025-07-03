@@ -6,18 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ArtMuseun</title>
     <link rel="stylesheet" href="styles/all.css">
+    <link rel="stylesheet" href="styles/landscape.css" media="screen and (orientation: landscape)">
 </head>
 
 <body>
     <header>
         <h1>ArtMuseun</h1>
+        <!-- nav pc -->
         <nav id="navPc">
             <ul>
-                <li>Home</li>
-                <li>Galeria</li>
-                <li>Contato</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Galeria</a></li>
+                <li><a href="index.html">Contato</a></li>
             </ul>
         </nav>
+        <!-- nav mobile -->
         <nav id="navMobile">
             <ul>
                 <li>Home</li>
@@ -25,8 +28,9 @@
                 <li>Contato</li>
             </ul>
         </nav>
+        <!-- botão menu -->
         <button id="menu" onclick="menuMobile()">
-            <img src="materialAuxiliar/menuIcon.svg" alt="botão de menu">
+            <img src="materialAuxiliar/menu.svg" alt="botão de menu">
         </button>
     </header>
 
@@ -39,8 +43,8 @@
             <div id="banner">
                 <h2>Elizabeth</h2>
                 <picture>
-                    <source media="(min-width:800 )" srcset="materialAuxiliar/images/elizabethMenor.png">
-                    <img src="materialAuxiliar/images/elizabeth.jpg" alt="">
+                    <source media="(min-width:800px )" srcset="materialAuxiliar/images/elizabeth.jpg">
+                    <img src="materialAuxiliar/images/elizabethMenor.png" alt="">
                 </picture>
                 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, dolorem voluptatum delectus placeat
