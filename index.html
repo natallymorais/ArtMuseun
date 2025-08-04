@@ -12,7 +12,11 @@
 <body>
     <header>
         <h1>ArtMuseun</h1>
-        <!-- nav pc -->
+
+        <button id="menu" onclick="menuMobile()">
+            <img src="materialAuxiliar/menu.svg" alt="botão de menu">
+        </button>
+
         <nav id="navPc">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -20,90 +24,82 @@
                 <li><a href="index.html">Contato</a></li>
             </ul>
         </nav>
-        <!-- nav mobile -->
-        <nav id="navMobile">
-            <ul>
-                <li>Home</li>
-                <li>Galeria</li>
-                <li>Contato</li>
-            </ul>
-        </nav>
-        <!-- botão menu -->
-        <button id="menu" onclick="menuMobile()">
-            <img src="materialAuxiliar/menu.svg" alt="botão de menu">
-        </button>
+
     </header>
 
     <main>
-        
+
         <section>
-            <div id="ds">
-                <h2>Destaque da semana</h2>
-            </div>
-            <div id="banner">
-                <h2>Elizabeth</h2>
-                <picture>
-                    <source media="(min-width:800px )" srcset="materialAuxiliar/images/elizabeth.jpg">
-                    <img src="materialAuxiliar/images/elizabethMenor.png" alt="">
-                </picture>
-                
+            <h2 class="titulo">Destaque da semana</h2>
+            <div class="dividir"></div>
+            <div class="destacar">
+                <h3>Elizabeth</h3>
+                <img src="materialAuxiliar/images/elizabeth.jpg" alt="">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, dolorem voluptatum delectus placeat
                     debitis amet consectetur ea laboriosam? Quae, voluptas. Asperiores sint adipisci saepe minus soluta.
                     Velit enim placeat quis.</p>
-                <a href="#"><button>Ver sobre</button></a>
-            </div>
-        
-            <div id="sobre">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione sunt obcaecati veniam! Dolore
+                <div id="ver-sobre">
+                    <a href="#"><button class="btn">Ver sobre</button></a>
+                </div>
+        </section>
+
+        <section id="sobre">
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione sunt obcaecati veniam! Dolore
                 consectetur
-                ab odio quos voluptatibus, quam omnis adipisci est asperiores. Esse nemo aliquid odio animi rerum sint.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo numquam, praesentium aperiam necessitatibus
+                ab odio quos voluptatibus, quam omnis adipisci est asperiores. Esse nemo aliquid odio animi rerum
+                sint.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo numquam, praesentium aperiam
+                necessitatibus
                 blanditiis esse voluptate iusto! Placeat minima modi accusamus, dicta vero molestias aliquid
                 consequuntur quas error quam quisquam!
-            </div>
-            <div id="ds">
-                <h2>Artes</h2>
+            </p>
+        </section>
+
+
+        <section id="secao-artes">
+            <h2 class="titulo">Artes</h2>
+            <div class="dividir"></div>
+            <div class="artes">
+
+                <div class="arte">
+                    <h4>Título da arte</h4>
+                    <img src="materialAuxiliar/images/arte1.jpg" alt="arte1">
+                    <p>Descrição da arte</p>
+                    <a href="#"><button class="btn">Ver sobre</button></a>
+                </div>
+
+                <div class="arte">
+                    <h4>Título da arte</h4>
+                    <img src="materialAuxiliar/images/arte2.jpg" alt="arte2">
+                    <p>Descrição da arte</p>
+                    <a href="#"><button class="btn">Ver sobre</button></a>
+                </div>
+
+                <div class="arte">
+                    <h4>Título da arte</h4>
+                    <img src="materialAuxiliar/images/arte3.jpg" alt="arte3">
+                    <p>Descrição da arte</p>
+                    <a href="#"><button class="btn">Ver sobre</button></a>
+                </div>
+
             </div>
         </section>
 
-        <div id="artes">
-                <div class="artes">
-                    <h2>Título da arte</h2>
-                    <img src="materialAuxiliar/images/arte1.jpg" alt="arte1">
-                    <p>Descrição da arte</p>
-                    <a href="#"><button>Ver sobre</button></a>
-                </div>
-                <div class="artes">
-                    <h2>Título da arte</h2>
-                    <img src="materialAuxiliar/images/arte2.jpg" alt="arte2">
-                    <p>Descrição da arte</p>
-                    <a href="#"><button>Ver sobre</button></a>
-                </div>
-                <div class="artes">
-                    <h2>Título da arte</h2>
-                    <img src="materialAuxiliar/images/arte3.jpg" alt="arte3">
-                    <p>Descrição da arte</p>
-                    <a href="#"><button>Ver sobre</button></a>
-                </div>
-                
-                
-                
-            </div>
     </main>
 
     <footer>
         <p>ArtMuseun &copy 2025</p>
     </footer>
 
-<script>
-    function menuMobile(){
-        if(navMobile.style.display == "flex"){
-            navMobile.style.display = "none"
-        }else {
-            navMobile.style.display = "flex"
+    <script>
+        function menuMobile() {
+            if (navMobile.style.display == "flex") {
+                navMobile.style.display = "none"
+            } else {
+                navMobile.style.display = "flex"
+            }
         }
-    }
-</script>
+    </script>
 </body>
 
 </html>
