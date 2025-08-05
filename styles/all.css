@@ -1,6 +1,6 @@
 @media (max-width: 768px) {
-    .menu-btn {
-        display: block;
+    #menu-btn {
+        display: flex !important;;
     }
 
     nav {
@@ -9,11 +9,14 @@
         background: #2c2c2c;
         width: 100%;
         margin-top: 10px;
+        position: fixed;
+        align-items: center;
+        bottom: 0%;
+        
     }
 
     nav a {
         padding: 10px 20px;
-        border-top: 1px solid #444;
     }
 
     .artes {
@@ -25,7 +28,9 @@
         width: 100%;
     }
 }
-
+#menu-btn {
+    display: none;
+}
 * {
     margin: 0;
     padding: 0;
@@ -44,7 +49,7 @@ header {
     color: #fff;
     padding: 15px 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     position: sticky;
     top: 0;

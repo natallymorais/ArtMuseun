@@ -13,16 +13,14 @@
     <header>
         <h1>ArtMuseun</h1>
 
-        <button id="menu" onclick="menuMobile()">
+        <!-- <button id="menu-btn" onclick="menuMobile()">
             <img src="materialAuxiliar/menu.svg" alt="botão de menu">
-        </button>
+        </button> -->
 
         <nav id="navPc">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html">Galeria</a></li>
-                <li><a href="index.html">Contato</a></li>
-            </ul>
+                <a href="index.html">Home</a>
+                <a href="index.html">Galeria</a>
+                <a href="index.html">Contato</a>
         </nav>
 
     </header>
@@ -93,10 +91,10 @@
 
     <script>
         function menuMobile() {
-            if (navMobile.style.display == "flex") {
-                navMobile.style.display = "none"
+            if (navPc.style.display == "flex") {
+                navPc.style.display = "none"
             } else {
-                navMobile.style.display = "flex"
+                navPc.style.display = "flex"
             }
         }
     </script>
